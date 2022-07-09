@@ -7,36 +7,33 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<style>
 
-		html{
+		html, body{
 			height: 100%;
 		}
 
 		body{
-
-			color: #fff;
+			color: #4e4153;
 			font-family: "Source Sans Pro", Helvetica, sans-serif;
-			font-size: 14pt;
 			font-weight: 300;
 			line-height: 2;
 			letter-spacing: 0.2em;
 			text-transform: uppercase;
 
-			height: 100%;
 			background-image: url(img/bg2.jpg);
 			background-size: 100% 100%;
 			background-size: cover;
 		}
 
 		.link{
-			background-color: #cecece;
-			margin: auto;
-			margin-top: 30px;
-			border-radius: 15px;
+			margin-top: 50px;
+			border-radius: 20px;
 			display: flex;
-			width: 100%;
-			overflow: hidden; /* clearfix */
 			justify-content: center;
 			align-items: center;
+
+			-webkit-box-shadow: 0px 0px 15px 5px rgba(34, 60, 80, 0.25);
+			-moz-box-shadow: 0px 0px 15px 5px rgba(34, 60, 80, 0.25);
+			box-shadow: 0px 0px 15px 5px rgba(34, 60, 80, 0.25);
 		}
 
 		.link:before {
@@ -59,7 +56,7 @@
 		}
 
 		.whatsapp{
-			background-color: #29a71a;
+			background-color: #43d854;
 		}
 
 		.instagram{
@@ -75,13 +72,16 @@
 			left: 0;
 			display: flex;
 			align-items: center;
-			align-content: center;
 			justify-content: center;
 			overflow: auto;
 		}
 
 		h1{
 			text-align: center;
+		}
+
+		.container{
+			width: 90%;
 		}
 
 		@media (min-width: 992px) {
@@ -93,12 +93,20 @@
 		@media (min-width: 768px) and (max-width: 991px){
 			h1{
 				font-size: 70px;
-			}
+			}	
 		}
 
 		@media screen and (max-width: 767px){
 			h1{
 				font-size: 40px;
+			}
+
+			.container{
+				width: 95%;
+			}
+
+			.link{
+				margin-top: 20px;
 			}
 		}
 
