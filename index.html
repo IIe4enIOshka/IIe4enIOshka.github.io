@@ -1,92 +1,153 @@
-<!DOCTYPE HTML>
-<!--
-	Identity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Alexey Vyrodov</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alexey Vyrodov - фото</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<style>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		html{
+			height: 100%;
+		}
 
-				<!-- Main -->
-					<section id="main">
-						<header>
-							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
-							<h1>Alexey Vyrodov</h1>
-							<p>Java and Android Developer</p>
-						</header>
-						<!--
-						<hr />
-						<h2>Extra Stuff!</h2>
-						<form method="post" action="#">
-							<div class="fields">
-								<div class="field">
-									<input type="text" name="name" id="name" placeholder="Name" />
-								</div>
-								<div class="field">
-									<input type="email" name="email" id="email" placeholder="Email" />
-								</div>
-								<div class="field">
-									<select name="department" id="department">
-										<option value="">Department</option>
-										<option value="sales">Sales</option>
-										<option value="tech">Tech Support</option>
-										<option value="null">/dev/null</option>
-									</select>
-								</div>
-								<div class="field">
-									<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-								</div>
-								<div class="field">
-									<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
-								</div>
-								<div class="field">
-									<label>But are you a robot?</label>
-									<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
-									<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
-								</div>
-							</div>
-							<ul class="actions special">
-								<li><a href="#" class="button">Get Started</a></li>
-							</ul>
-						</form>
-						<hr />
-						-->
-						<footer>
-							<ul class="icons">
-								<li><a href="https://github.com/IIe4enIOshka" class="icon brands fa-github">GitHub</a></li>
-								<li><a href="https://vk.com/iie4enioshka" class="icon brands fa-vk">Vk</a></li>
-								<li><a href="mailto:g47711@gmail.com" class="icon solid fa-envelope">Email</a></li>
+		body{
 
-							</ul>
-						</footer>
-					</section>
+			color: #fff;
+			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			font-size: 14pt;
+			font-weight: 300;
+			line-height: 2;
+			letter-spacing: 0.2em;
+			text-transform: uppercase;
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; Alexey Vyrodov</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
+			height: 100%;
+			background-image: url(img/bg2.jpg);
+			background-size: 100% 100%;
+			background-size: cover;
+		}
 
+		.link{
+			background-color: #cecece;
+			margin: auto;
+			margin-top: 30px;
+			border-radius: 15px;
+			display: flex;
+			width: 100%;
+			overflow: hidden; /* clearfix */
+			justify-content: center;
+			align-items: center;
+		}
+
+		.link:before {
+			content: "";
+			padding-top: 100%;
+			float: left;
+		}
+
+		.link img{
+			max-width: 150px;
+			width: 50%;
+		}
+		
+		.tg{
+			background-color: #039be6;
+		}
+
+		.vk{
+			background-color: #45668e;
+		}
+
+		.whatsapp{
+			background-color: #29a71a;
+		}
+
+		.instagram{
+			background: #d6249f;
+			background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+		}
+
+		.cards{
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			display: flex;
+			align-items: center;
+			align-content: center;
+			justify-content: center;
+			overflow: auto;
+		}
+
+		h1{
+			text-align: center;
+		}
+
+		@media (min-width: 992px) {
+			h1{
+				font-size: 100px;
+			}
+		}
+
+		@media (min-width: 768px) and (max-width: 991px){
+			h1{
+				font-size: 70px;
+			}
+		}
+
+		@media screen and (max-width: 767px){
+			h1{
+				font-size: 40px;
+			}
+		}
+
+	</style>
+
+</head>
+<body>
+	
+	<div class="cards">
+		
+
+		<div class="container">
+			<div class="row">
+				<h1>Alexey Vyrodov</h1>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-6">
+					<div class="link tg">
+						<img src="img/tg.png" alt="">
+
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-6">
+					<div class="link vk">
+						<img src="img/vk.png" alt="">
+
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-6">
+					<div class="link whatsapp">
+						<img src="img/whatsapp.png" alt="">
+
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-6">
+					<div class="link instagram">
+						<img src="img/instagram.png" alt="">
+
+					</div>
+				</div>
 			</div>
 
-		<!-- Scripts -->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
+		</div>
+	</div>
+</div>
 
-	</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
 </html>
