@@ -1,174 +1,54 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+	
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<meta property="og:type" content="website">
-	<meta property="og:site_name" content="Alexey Vyrodov">
-	<meta property="og:image" content="img/avatar.jpg">
-	<meta property="og:image:width" content="968">
-	<meta property="og:image:height" content="504">
-
-	<link rel="icon" href="img/favicon2.png">
-
-	<title>Alexey Vyrodov</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-	<style>
-
-		html, body{
-			height: 100%;
-		}
-
-		body{
-			color: #4e4153;
-			font-family: "Source Sans Pro", Helvetica, sans-serif;
-			font-weight: 300;
-			line-height: 2;
-			letter-spacing: 0.2em;
-			text-transform: uppercase;
-
-			background-image: url(img/bg2.jpg);
-			background-size: 100% 100%;
-			background-size: cover;
-		}
-
-		.link{
-			margin-top: 50px;
-			border-radius: 20px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-
-			-webkit-box-shadow: 0px 0px 15px 5px rgba(34, 60, 80, 0.5);
-			-moz-box-shadow: 0px 0px 15px 5px rgba(34, 60, 80, 0.5);
-			box-shadow: 0px 0px 15px 5px rgba(34, 60, 80, 0.5);
-		}
-
-		.link:before {
-			content: "";
-			padding-top: 100%;
-			float: left;
-		}
-
-		.link img{
-			max-width: 150px;
-			width: 50%;
-		}
-		
-		.tg{
-			background-color: #039be6;
-		}
-
-		.vk{
-			background-color: #45668e;
-		}
-
-		.whatsapp{
-			background-color: #43d854;
-		}
-
-		.instagram{
-			background: #d6249f;
-			background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-		}
-
-		.cards{
-			width: 100%;
-			height: 100%;
-			position: fixed;
-			top: 0;
-			left: 0;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			overflow: auto;
-		}
-
-		h1{
-			text-align: center;
-		}
-
-		.container{
-			width: 90%;
-		}
-
-		@media (min-width: 992px) {
-			h1{
-				font-size: 100px;
-			}
-		}
-
-		@media (min-width: 768px) and (max-width: 991px){
-			h1{
-				font-size: 70px;
-			}	
-		}
-
-		@media screen and (max-width: 767px){
-			h1{
-				font-size: 40px;
-			}
-
-			.container{
-				width: 95%;
-			}
-
-			.link{
-				margin-top: 20px;
-			}
-		}
-
-	</style>
-
+	<meta http-equiv="Cache-control" content="public">
+	<title>Photo</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/baguetteBox.min.css">
+	<link type="image/png" rel="icon" href="ico/favicon/favicon.ico">
+	<script type="text/javascript" src="js/baguetteBox.min.js"></script>
 </head>
 <body>
+	<div id="window">
+		<!-- <input id="rename" type="button" value="Переименовать"> -->
+		<input id="delete" type="button" value="Удалить">
+	</div>
+
 	
-	<div class="cards">
-		
 
-		<div class="container">
-			<div class="row">
-				<h1>Alexey Vyrodov</h1>
-			</div>
-			<div class="row">
-				<div class="col-lg-3 col-6">
-					<a href="https://t.me/IIe4enIOshka">
-						<div class="link tg">
-							<img src="img/tg.png" alt="">
-						</div>
-					</a>
-				</div>
-
-				<div class="col-lg-3 col-6">
-					<a href="https://vk.com/iie4enioshka">
-						<div class="link vk">
-							<img src="img/vk.png" alt="">
-						</div>
-					</a>
-				</div>
-
-				<div class="col-lg-3 col-6">
-					<a href="whatsapp://send?phone=79138950564">
-						<div class="link whatsapp">
-							<img src="img/whatsapp.png" alt="">
-						</div>
-					</a>
-				</div>
-
-				<div class="col-lg-3 col-6">
-					<a href="https://www.instagram.com/vyrodovalexey">
-						<div class="link instagram">
-							<img src="img/instagram.png" alt="">
-						</div>
-					</a>
-				</div>
-			</div>
+	<div class="container">
+		<div class="NameDist">
+			
+		</div>
+		<div id="grid" class="gallery grid clearfix" data-columns>
 
 		</div>
 	</div>
-</div>
+	
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/salvattore.min.js"></script>
+	<script type="text/javascript" src="js/gallery.js"></script>
+	<script type="text/javascript" src="js/getImages.js"></script>
+	<script type="text/javascript" src="js/load.js"></script>
+	<script type="text/javascript" src="js/likeClick.js"></script>
+	<script type="text/javascript" src="js/deleteImage.js"></script>
+	<script type="text/javascript" src="js/addContext.js"></script>
+	<script type="text/javascript" src="js/clear.js"></script>
+	<script type="text/javascript" src="js/rightClick.js"></script>
+	
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	
+
+	
+<!-- 	<script>
+		$(window).on('load', function(){
+			
+		});
+	</script> -->
 </body>
 </html>
