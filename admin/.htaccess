@@ -1,7 +1,0 @@
-AuthType Basic
-AuthName "Thats protected Area!"
-AuthUserFile D:/ospanel/domains/photo/WWW/admin/.htpasswd
-Require valid-user
-<Files .htpasswd>
-   deny from all
-</Files>
